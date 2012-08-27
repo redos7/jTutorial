@@ -1,0 +1,38 @@
+.jtutorial-overlay { 
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	background: url(overlay.png);
+	display: none;
+}
+
+.jtutorial-overlay-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 25;
+	font-size: 25px;
+}
+
+.jtutorial-esckey {
+	display: inline-block;
+	vertical-align: middle;
+    width:            24px;
+    height:           24px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFF0lEQVR42q1VW1BTZxDezY1cCNhAyIUAoiEX6NixM45a+9Q+9EXaJDPaB58cBQTkIlSsL61TnalKQYpgQMZW351E4akzreXBsU92pjrWW1suIYkEEYqEMTe2ew4hDdXOqO0/c3I2e/b8337f7r8HfxwdzY/FE5/JZfKG3NxcJRAvEBfylTYzdrbvuRgUbP5djC7GZDLZuSK9/gtsa//kvZ3V1SObqqpUMrkMV/an1XjKepfW+uAFMUDIt2Qyibdu31m6du37aqysqvqwu7vnaomlGMxmE6RSKaDsPV5yobg/gFQqhVAoDIGpILS1tX6ElZVVru7uMz61Rg0GQxGWl5dTKpl8LYmkMhmN/TEGkUgEo9Elams75EFnZaXrTM/XvjytFrTaXLRYLLSw8HQlpVUqq3a2L9uf/peXp6Xx8Ql49uwZ/rmwQIdaW1YAenp6/evy8yCXQSzFxfB0cTFD+VVWrkYDExMiAMzNz0Nra4sbnU4G6O316d7QMQMNmk1mii5FBQAu+KtIRKhRa2gyEBAZzD55Qq3NzR50OJ2u3t4+X2FhgZABms1misVjXCyZ+DLRstgVy8uUBvi3LgJUq9QUYIBYLIYzjx9Tc3MTAzgY4Gyf31CkBzVTLC2xwMDAAExMTgItE2+egOMnTojdtZrwiuxCSSQZKCERpVIFgcAUxGMxmI7MQFPTQTfaHQ7X2b5+n8loAA0zKCkpoU+PHIHTpzsxkUySsHE8nsBIZJrCoRAXMo+KigxCQ0AwHMYnnKlEKoGKChtLpKapoMAgjuFH09TU2OhBu93h6us/5ys2G0GtVosARxjg1KnTGE/EuWVT3Nch9F/xE59MlmqZNm9+W8z46vAwmoxGWlpagj179mB+fj4Fg0FOKI7BUJgOCgA2u93V3+/1lVjMoBIAuE2PHj0qasqBVFNTK2o6PDxM+/btR72+gBiDEzgJu3btxrKyMuI4kMvlKJfLKBgKQSIRx0AgSI2NDQxgs7vOeb3+stJSUKqUYpt2dHRAc0uLsDHo9XpR49HRUfjpxg1giWDnzmq4dOkifHnypFib1PIyAIMyAITDYWBpuV0noaG+3o0VNpvL6x30rV9fCiqlCk0mI3V0HIbOzq/EzhGkENqOL9JqtXj58mWxLlNTU7B9+3bcunUbzc3NAcuDCoWCwo/CkEwkcWx8nOrrD3iQi+PyDgz6N24ohxxmYDIYoL29XTxorLeYYUNjIwx4vSCRSIAnLrjdbigsLISurm6xFtFoFI4fPyGyFRhwW8PvPDLqD9S50coAg4PnfRXWDZCTo2SNC+n5Q7T2oGVNkEwM+8RJPD0d4cRS+ODhb1RXV+tBq7XCNXh+yGe3WRkgB3U6HaXHDlLWnEmP4oxPuDGjNTHCYx50AnO8d/8h1dXWeHAjAwwNDfmddhvIFQpggFeeQdlrZmZGlPbXu/ehtrbGzQBWBrjge7PKKdJkkBUGnFH6y5Oxs33Z/lWbOVCCW1bCVG7fuUs1+/d5cMNGq+vChW98b22qgkfTMzg7O0tCBtlyrNr/kG2tjGzzxlRQUABG/q78cus2n5s0wLcXL/rX8zmYn5uHzAB9nS9meh7qdOtgjL8Le/fudaPRZNrR3n74/I5333Eo5ArJCzrnJcf13zafZLp+/ca9rq7OWtyyZcs6Hq0f2GyO95llzn+qcGayUuzBg3s/FJvN3+Hnx45JR0ZGtD/fvJnHz6T/BwCv1NZt2xZ27/746V9au7gFnKo09gAAAABJRU5ErkJggg==');
+}
+
+.jtutorial-overlay-help {
+	background: #D7EBF9;
+	padding: 5px 19px 8px 19px;
+	position: absolute;
+	top: 0;
+	z-index: 6;
+	display: none;
+	border: 1px solid #2779AA;
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}

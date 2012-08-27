@@ -1,0 +1,40 @@
+[
+    {
+        items:"#ad-images-views li:first",
+        message: {text: "YAHOO", position: {x:33,y:90}}, 
+        events: [{item: "#ad-images-views li:first", type: "click", condition: func_step_delay_100}]
+    },
+    
+	{
+        items:"#holder", 
+        message: {text: step_2, position: {x:160,y:22}}, 
+        events: [{item: "#holder", type: "drop" }]
+    },
+    
+	{
+        items:"#ad_description", 
+        message: {text: step_3, position: {x:400,y:200}}
+    },
+    
+	{
+        items:"#lang_slider", 
+        message: {text: step_4, position: {x:400,y:200}}, 
+        events: [{item: "#lang_slider", type: "click"}]
+    },
+    
+	{
+        items:"#ad_description", 
+        message: {text: step_5, position: {x:400,y:200}}
+    },
+    
+	{
+        items:"#ad-image-save-button", 
+        message: {text: step_6, position: {x:500,y:200}}, 
+        events: [{item: "#ad-image-save-button", type: "click", condition: func_step_last }]
+    },
+    
+	{
+        items:"", 
+        message: {text: step_7, position: {x:200,y:400}}
+    }
+]
