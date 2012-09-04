@@ -13,7 +13,7 @@ ___
     	[
     		{ // Step 1
     			items:"#ad-images-views li:first", // Elemets what's will higlight
-    			message: {text: "YAHOO", position: {x:33,y:90}}, // Message and position message
+    			message: {text: "YAHOO", position: {x:33,y:90}}, // Message and position of message
     			events: [{item: "#ad-images-views li:first", type: "click", condition: func_step_delay_100}] // Event's or/and function trigger for move next step
     		},
     		{},
