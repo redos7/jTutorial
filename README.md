@@ -12,8 +12,7 @@ ___
     		{ // Step 1
     			items:"#ad-images-views li:first", // Elemets what's will higlight
     			message: {text: "YAHOO", position: {x:33,y:90}}, // Message and position message
-    			events: [{item: "#ad-images-views li:first", type: "click", condition: func_step_delay_100}], // Event's for move next step or ...
-    			condition: function() {} // Custom trigger execute when step is launching
+    			events: [{item: "#ad-images-views li:first", type: "click", condition: func_step_delay_100}] // Event's or/and function trigger for move next step or ...
     		},
     		{},
     		{},
@@ -25,7 +24,7 @@ ___
 
 ## Methods
 	
-  * **$.jtutorial('start')** - Start tutorial
+  * **$.jtutorial('start')** - Start tutorial (Alias - #jtutorial-start)
 
   * **$.jtutorial('close');** - Stop tutorial. (Alias - #jtutorial-close)
 
@@ -46,5 +45,5 @@ ___
 	
 ## Events
 
-  * **jtutorial.stepend** Execute function when step is ended. Synonym method stepend.
+  * **jtutorial.stepend** - Execute function when step is ended. Synonym method stepend.
 
