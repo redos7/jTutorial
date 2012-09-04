@@ -2,6 +2,8 @@ jTutorial v0.4
 =========
 Jquery plugin for tutorial on web pages.
 by RED (red@dbwap.ru)
+
+Special thanks to SeWeRd-in
 ___
 
 
