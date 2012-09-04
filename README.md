@@ -36,7 +36,7 @@ ___
 
   * **$.jtutorial('firststep');** - Launch first step. (Alias - #jtutorial-firststep)
   
-  * **$.jtutorial('stepend', function(){});** - Execute function when step is ended.
+  * **$.jtutorial('stepend', function(step){});** - Execute function when step is ended.
   
   * **$.jtutorial('addstep', step);** - Add step. Syntax like steps in initialize.
   
