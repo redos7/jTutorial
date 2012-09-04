@@ -111,10 +111,13 @@
 	},
 		
 	showhelptooltip: function() {
-		if(!$('.jtutorial-overlay-parent').length)
+		if(!$('.jtutorial-overlay-help').length)
 			$('.jtutorial-overlay-parent').append('<div class="jtutorial-overlay-help">');
 		
-		$('.jtutorial-overlay-help').html('<div style="font-size:18px">Вы можете прервать обучение в любой момент нажав клавишу <div class="jtutorial-esckey" /></div>')
+		var message = 'Вы можете прервать обучение в любой момент нажав клавишу';
+		var message = 'You can abort this tutorial at anytime just press bottom';
+		
+		$('.jtutorial-overlay-help').html('<div style="font-size:18px">'+message+' <div class="jtutorial-esckey" /></div>')
 			.css('left', ($(document).width()/2)-($('.jtutorial-overlay-help').outerWidth()/2));
 			
 		setTimeout(function() {
