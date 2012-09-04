@@ -22,6 +22,11 @@ ___
     $.jtutorial('start');
 
 
+## Demo
+
+  * **http://redos.koding.com/jtutorial/demo.html**
+
+	
 ## Methods
 	
   * **$.jtutorial('start')** - Start tutorial (Alias - #jtutorial-start)
@@ -48,7 +53,3 @@ ___
   * **jtutorial.stepend** - Execute function when step is ended. Synonym method stepend.
 
 	
-## Demo
-
-  * **http://redos.koding.com/jtutorial/demo.html**
-
