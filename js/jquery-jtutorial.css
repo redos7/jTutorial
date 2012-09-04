@@ -4,7 +4,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 5;
-	background: url(overlay.png);
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiFBQU3MxABGBiIBKMKqSOQoAAAwB+1wD6rSxH5wAAAABJRU5ErkJggg==');
 	display: none;
 }
 

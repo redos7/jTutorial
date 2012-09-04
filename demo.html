@@ -1,0 +1,86 @@
+<html>
+<head><title>Demo page - jTutorial</title>
+<link rel="stylesheet" href="js/jquery-jtutorial.css" type="text/css">
+<script type="text/javascript" src="js/jquery-min.js"></script>
+<script type="text/javascript" src="js/jquery-jtutorial.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var func_step_delay_2000 = function() {
+			setTimeout(function(){$.jtutorial('nextstep');console.log('next');}, 2000);
+		}
+		var step_1 = '<div style="color: white; font-weight: bold; font-size:50px">First step!</div><div style="color: #D7EBF9;font-size:35px">Click on highlight button.</div>';
+		var step_2 = '<div style="color: white; font-weight: bold; font-size:50px">Second step!</div><div style="color: #D7EBF9;font-size:31px;width: 630px;">Next step will show with delay 2sec.</div>';
+		var step_3 = '<div style="color: white; font-weight: bold; font-size:50px">Third step!</div><div style="color: #D7EBF9;font-size:35px;">This step will show a few highlight elements.</div>';
+		var step_4 = '<div style="color: white; font-weight: bold; font-size:50px">Fourth step!</div><div style="color: #D7EBF9;font-size:31px;width: 630px;">Some element can be highlight. Click <a href="" style="color: #78FFA0;font-size:50px;" id="jtutorial-nextstep">here</a> to finish step.</div>';
+		var step_5 = '<div style="color: white; font-weight: bold; font-size:50px">Finish!</div><div style="color: #D7EBF9;font-size:31px;width: 630px;">Press ESC for exit. Or click <a href="" style="color: #78FFA0;font-size:20px;" id="jtutorial-close">here</a></div>';
+		
+		var steps = [
+						{
+							items:"#step_1",
+							message: {text: step_1, position: {x:33,y:90}}, 
+							events: [{item: "#step_1", type: "click"}]
+						},
+						
+						{
+							items:"#step_2", 
+							message: {text: step_2, position: {x:160,y:22}}, 
+							events: [{item: "#step_2", type: "click", condition: func_step_delay_2000}]
+						},
+						
+						{
+							items:"#step_3, #step_4", 
+							message: {text: step_3, position: {x:400,y:200}},
+							events: [{item: "#step_3", type: "click"}, {item: "#step_4", type: "click"}]
+						},
+						
+						{
+							items:".page", 
+							message: {text: step_4, position: {x:400,y:200}},
+							events: []
+						},
+						
+						{
+							items:"", 
+							message: {text: step_5, position: {x:400,y:200}},
+							events: []
+						}
+					];
+		
+		$.jtutorial(steps);
+		
+		$("#start_buttom").click(function(){
+			$.jtutorial('start');
+		})
+	});
+</script>
+<style>
+body {
+	background: #EEE;
+}
+.page {
+	padding: 20px 50px;
+	margin: 200px 50px;
+	border: solid 1px #888;
+	background: #FFF;
+}
+.start_buttom {
+	margin: 20px 10px;
+}
+#start_buttom {
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="page">
+	<div class="start_buttom">
+		<input type="button" value="Start this!" id="start_buttom">
+	</div>
+	<input type="button" value="Highlight this" id="step_1">
+	<input type="button" value="Highlight this after 2 sec" id="step_2">
+	<input type="button" value="Highlight this and" id="step_3">
+	<input type="button" value="this" id="step_4">
+	<input type="button" value="Highlight anything" id="step_5">
+</div>
+</body>
+</html>
