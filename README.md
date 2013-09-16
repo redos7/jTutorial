@@ -26,7 +26,7 @@ ___
 
 ## Demo
 
-  * **http://redos.koding.com/jtutorial/demo.html**
+  * **http://samples.4dev2.ru/jtutorial/demo.html**
 
 	
 ## Methods
