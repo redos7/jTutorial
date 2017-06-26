@@ -1,7 +1,7 @@
 jTutorial v0.4
 =========
-Jquery plugin for tutorial on web pages.
-by RED (red@dbwap.ru)
+Jquery plugin to create interactive tutorials on the web page.
+by RED (theredos7@gmail.com)
 
 Special thanks to SeWeRd-in
 ___
@@ -9,7 +9,7 @@ ___
 
 ## How to use
 
-    steps = 
+    var steps = 
     	[
     		{ // Step 1
     			items:"#ad-images-views li:first", // Elemets what's will higlight
@@ -26,7 +26,7 @@ ___
 
 ## Demo
 
-  * **http://samples.4dev2.ru/jTutorial/demo.html**
+  * **https://redos7.github.io/jTutorial/demo.html**
 
 	
 ## Methods
